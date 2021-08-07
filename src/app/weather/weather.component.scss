@@ -1,0 +1,73 @@
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.3)
+      );
+    background-clip: border-box;
+    border: 0;
+    border-radius: 0;
+    padding:25px;
+}
+
+.temprature{
+    background-color: lightgray;
+}
+
+.searchCity{
+    margin-left: 2rem;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 1px;
+    margin: 1px;
+}
+
+.flex-items {
+    width: 50%;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.3)
+      );
+}
+
+.flex-container2{
+    display: flex;
+    justify-content: center;
+    padding: 1px;
+    margin: 1px;
+}
+input{
+text-rendering: auto;
+color: -internal-light-dark(black, white);
+letter-spacing: normal;
+word-spacing: normal;
+text-transform: none;
+text-indent: 0px;
+text-shadow: none;
+display: inline-block;
+text-align: start;
+appearance: auto;
+background-color: transparent;
+-webkit-rtl-ordering: logical;
+cursor: text;
+margin: 0em;
+font: 400 13.3333px Arial;
+padding: 1px 2px;
+border-width: 0;
+border-style: none;
+border-color: transparent;
+border-image: initial;
+}
