@@ -15,6 +15,7 @@ export class WeatherComponent implements OnInit {
   sunset: any | undefined;
   placeCode: string |undefined;
   timezoneb: any | undefined;
+  weather : any[] | undefined;
   
   constructor(
     private weatherService: WeatherService
@@ -35,6 +36,7 @@ export class WeatherComponent implements OnInit {
         this.placeCode = res['sys']['country'];
         this.windSpeed = res['wind']['speed'];
         this.timezoneb = res['timezone'];
+        this.weather = res['weather']
         console.log(res);
       }
     },(error) =>{

@@ -13,6 +13,6 @@ export class WeatherService {
   ) { }
 
   getWeatherDetails(cityName: string): Observable<any>{
-    return this.http.get<any>(environment.weatherApi+`?q=${cityName}&appid=${environment.weatherKey}`);
+    return this.http.get<any>(environment.weatherApi+`?q=${cityName}&units=metric&appid=${environment.weatherKey}`);
   }
 }

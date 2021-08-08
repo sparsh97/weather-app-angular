@@ -8,10 +8,12 @@
         <div class="card">
             <h2>{{place}}, {{placeCode}}</h2>
             <div class="container">
-                <img src="../../assets/images/haze.png" alt="" width="128px">
+                <img src="../../assets/images/haze.png" alt="" width="128px" *ngIf="weather && weather[0]['main'] === 'Haze'">
+                <img src="../../assets/images/sunny-day.png" alt="" width="128px" *ngIf="weather && weather[0]['main'] === 'Clear'">
+                <img src="../../assets/images/cloudy-day.png" alt="" width="128px" *ngIf="weather && weather[0]['main'] === 'Rain'">
             </div>
             <div class="card-body">
-                <h6>{{temparture}}</h6>
+                <h6>{{temparture}}<span>&#8451;</span></h6>
             </div>
         </div>
     </div>
